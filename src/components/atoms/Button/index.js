@@ -1,4 +1,3 @@
-import Button, { NextArrow, PrevArrow } from './Button';
+import Button from './Button';
 
 export default Button;
-export { NextArrow, PrevArrow };
