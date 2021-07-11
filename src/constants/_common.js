@@ -3,4 +3,4 @@ export const LOGO_IMAGE =
 
 export const REACT_APP_GOOGLE_MAPS_API_KEY = 'YOUR_GOOGLE_API_KEY';
 
-export const INITIAL_PARKINGS_COUNT = 2;
+export const INITIAL_PARKINGS_COUNT = 10;
