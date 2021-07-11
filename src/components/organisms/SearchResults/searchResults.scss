@@ -1,0 +1,10 @@
+@import '../../../styles';
+
+.search-results{
+  .load-more{
+    text-decoration: underline;
+    font-style: italic;
+    color: $link-color;
+    cursor: pointer;
+  }
+}

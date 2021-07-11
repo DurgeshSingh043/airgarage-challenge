@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className="header" onClick={navClickHandler}>
       <Logo className="header__logo" />
-      <div className="header__search-box"></div>
+      <h1>Find parking</h1>
     </div>
   );
 };

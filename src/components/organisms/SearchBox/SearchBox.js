@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { getSearchResults } from '../../../apis/searchAPIs';
@@ -8,7 +8,7 @@ import { Button, TextInput } from '../../atoms';
 
 import './searchBox.scss';
 
-const SearchBox = ({ className }) => {
+const SearchBox = memo(({ className }) => {
   const [address, setAddress] = useState('');
   const dispatch = useDispatch();
   const { addErrorToast } = useToast();
@@ -63,6 +63,6 @@ const SearchBox = ({ className }) => {
       />
     </div>
   );
-};
+});
 
 export default SearchBox;

@@ -14,7 +14,7 @@ const ParkingCard = (props) => {
     rating,
     display_phone,
     location: { display_address },
-  } = props || searchResults.businesses[1];
+  } = props;
   const score = ((review_count * rating) / (review_count + 1)).toFixed(1);
   return (
     <a className="parking-card" href={url} target="_blank" rel="noreferrer">

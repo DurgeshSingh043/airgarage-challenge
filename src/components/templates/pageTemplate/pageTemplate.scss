@@ -5,17 +5,17 @@
   flex-direction: column;
   min-height: 100vh;
   &__main{
-    margin: pxToRem(20) pxToRem(16);
+    margin: pxToRem(8);
     flex: 1;
     @include screen(tablet){
       align-self: center;
       width: 80%;
-      margin: pxToRem(40) pxToRem(16);
+      margin: pxToRem(16);
     }
     @include screen(desktop){
       align-self: center;
       width: 70%;
-      margin: pxToRem(40) pxToRem(16);
+      margin: pxToRem(24);
     }
   }
 }

@@ -6,48 +6,10 @@
   align-items: center;
   padding: pxToRem(16);
   box-shadow: 0px 1px 0px rgba(165, 165, 165, 0.2);
+  h1{
+    color: $theme-color;
+  }
   @include screen(desktop){
     padding: pxToRem(36);
   }
-  .nav{
-    display: none;
-    @include screen(desktop){
-      display: block;
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: pxToRem(16);
-      line-height: pxToRem(22);
-      color: #121212;
-      margin: 0 pxToRem(26);
-      padding: pxToRem(10) 0;
-      text-decoration: none;
-      border-bottom: 2px solid transparent;
-      &.active{
-        border-bottom-color: $caption-color;
-      }
-    }
-  }
-  .logo{
-    padding: pxToRem(4) pxToRem(48);
-    background-color: $light-gray;
-    border: 0;
-    font-size: pxToRem(14);
-    @include screen(desktop){
-      padding: pxToRem(6) pxToRem(80);
-      font-size: pxToRem(24);
-    }
-  }
-  &__nav-left, &__nav-right-search{
-    display: flex;
-    align-items: center;
-  }
-  &__nav-left{
-    &__menu-icon{
-      @include screen(desktop){
-        display: none;
-      }
-    }
-  }
-  
 }
