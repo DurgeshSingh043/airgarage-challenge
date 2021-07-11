@@ -1,6 +1,7 @@
-import { searchResults } from '../../../apis/mocks/searchResults';
 import { ICONS } from '../../../constants';
 import { Icon, Title, Text } from '../../atoms';
+import PhoneNumber from '../PhoneNumber/PhoneNumber';
+import RatingBar from '../RatingBar/RatingBar';
 
 import './parkingCard.scss';
 
@@ -19,7 +20,7 @@ const ParkingCard = (props) => {
   return (
     <a className="parking-card" href={url} target="_blank" rel="noreferrer">
       <div className="parking-card__image-area">
-        <img src={image_url} alt={name} />
+        <img className="lazyload" data-src={image_url} alt={name} />
       </div>
       <div className="parking-card__content-area">
         <Title
@@ -29,10 +30,7 @@ const ParkingCard = (props) => {
           title={name}
         />
         <div className="parking-card__content-area__score-rating-reviews mb-2">
-          <div className="score mr-1" title="Score">
-            <Icon name={ICONS.StarFilled} />
-            <span className="ml-1">{score}</span>
-          </div>
+          <RatingBar className="score mr-1" score={score} tooltip="Score" />
           <div className="rating-reviews">
             <Text text={`${rating} Ratings & ${review_count} Reviews`} />
           </div>
@@ -42,10 +40,7 @@ const ParkingCard = (props) => {
             <span>Address:</span> {display_address.join(' ')}
           </div>
           {display_phone && (
-            <a className="phone" href={`tel:${display_phone}`}>
-              <Icon name={ICONS.Call} />
-              {display_phone}
-            </a>
+            <PhoneNumber className="phone" phoneNumber={display_phone} />
           )}
         </div>
         <div className="parking-card__content-area__status">

@@ -8,6 +8,7 @@ const TextInput = ({
   label,
   className,
   onClearHandler,
+  ref,
   ...other
 }) => {
   const onChange = () => {};
@@ -16,7 +17,7 @@ const TextInput = ({
     <div className={`input-text ${className}`}>
       {label && <label>{label}</label>}
       <div className="input-text__area">
-        <input value={text} onChange={onChange} {...other} />
+        <input ref={ref} value={text} onChange={onChange} {...other} />
         {text && (
           <Icon
             name={ICONS.Clear}

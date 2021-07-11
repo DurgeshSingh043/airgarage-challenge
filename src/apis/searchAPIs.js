@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { SEARCH_API_BASE_URL } from '../constants';
+import { INITIAL_PARKINGS_COUNT, SEARCH_API_BASE_URL } from '../constants';
 import {
   failedLoadingSearchData,
   loadingSearchData,
@@ -12,7 +12,11 @@ const _getSearchResult = async (seartText, limit) =>
     `${SEARCH_API_BASE_URL}/getparkingbylocation?location=${seartText}&limit=${limit}`,
   );
 
-export const getSearchResults = async (dispatch, seartText, limit = 10) => {
+export const getSearchResults = async (
+  dispatch,
+  seartText,
+  limit = INITIAL_PARKINGS_COUNT,
+) => {
   dispatch(loadingSearchData());
   try {
     const result = await _getSearchResult(seartText, limit);
