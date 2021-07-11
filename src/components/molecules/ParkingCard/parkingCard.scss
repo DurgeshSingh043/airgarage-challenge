@@ -1,0 +1,99 @@
+@import '../../../styles';
+
+.parking-card {
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid $theme-color;
+  border-radius: $border-radius;
+  text-decoration: none;
+    margin-bottom: pxToRem(8);
+    @include screen(tablet){
+    margin-bottom: pxToRem(12);
+  }
+  @include screen(desktop){
+    margin-bottom: pxToRem(16);
+  }
+  &__image-area{
+    height: pxToRem(10 * 16);
+    width: 45%;
+    background-color: $light-gray;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    @include screen(tablet){
+      height: pxToRem(14*16);
+    }
+    @include screen(desktop){
+      height: pxToRem(16*16);
+    }
+  }
+  &__content-area{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin: pxToRem(8);
+    &__name{
+      display: inline-block;
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    &__score-rating-reviews{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      .score{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        border-radius: $border-radius;
+        background-color: $theme-color-yellow;
+        padding: pxToRem(3);
+        color: $white;
+        font-size: pxToRem(14);
+        font-weight: bold;
+        .icon{
+          background-color: $white;
+        }
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+    &__address{
+      span{
+        font-size: pxToRem(14);
+        font-weight: bold;
+        color: $black;
+      }
+      font-size: pxToRem(12);
+      color: rgba(0, 0, 0, 0.6);
+      .phone{
+        display: flex;
+        align-items: center;
+        margin-top: pxToRem(4);
+      }
+    }
+    &__status{
+      display: flex;
+      flex-wrap: nowrap;
+      .status{
+        font-weight: bold;
+        margin-right: pxToRem(36);
+        &.red{
+          color: $danger
+        }
+        &.green{
+          color: $success
+        }
+      }
+      .explore-more{
+        text-decoration: underline;
+        font-style: italic;
+        color: $link-color;
+      }
+    }
+  }
+}

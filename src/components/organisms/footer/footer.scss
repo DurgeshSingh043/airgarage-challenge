@@ -1,0 +1,15 @@
+@import '../../../styles';
+
+.footer{
+  padding: pxToRem(20);
+  background-color: $theme-color;
+  color: $white;
+  text-align: center;
+  &--copyright-text{
+    font-size: pxToRem(14);
+    line-height: pxToRem(19);
+  }
+  @include screen(desktop){
+    padding: pxToRem(30) pxToRem(130);
+  }
+}

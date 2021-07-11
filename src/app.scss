@@ -1,0 +1,38 @@
+@import './styles';
+
+.App {
+  font-family: Open Sans; // sans-serif;
+}
+
+*{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0
+}
+
+$rules: (
+  (m, margin),
+  (ml, margin-left),
+  (mt, margin-top),
+  (mb, margin-bottom),
+  (mr, margin-right),
+  (mx, margin-top, margin-bottom),
+  (my, margin-right, margin-left),
+  (p, padding),
+  (pl, padding-left),
+  (pt, padding-top),
+  (pb, padding-bottom),
+  (pr, padding-right),
+  (px, padding-top, padding-bottom),
+  (py, padding-right, padding-left),
+);
+
+@each $item in $rules {
+  @if length($item) > 2 {
+    @include generate(nth($item, 1), (nth($item, 2), nth($item, 3)));
+  } @else {
+    @include generate(nth($item, 1), (nth($item, 2)));
+  }
+}

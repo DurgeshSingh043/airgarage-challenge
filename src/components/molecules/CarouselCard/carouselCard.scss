@@ -1,0 +1,76 @@
+@import '../../../styles';
+
+.carousel-card{
+  display: flex;
+  flex-direction: column;
+  margin-right: pxToRem(12);
+  @include screen(desktop){
+    margin-right: pxToRem(20);
+  }
+  &__image{
+    position: relative;
+    img{
+      width: 100%;
+    }
+    .hover-text{
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: pxToRem(8) pxToRem(16);
+      text-align: right;
+      background: $white;
+      mix-blend-mode: normal;
+      opacity: 0.6;
+      color: $black;
+      font-weight: 400;
+      font-size: pxToRem(16);
+      line-height: pxToRem(22);
+      letter-spacing: pxToRem(1);
+      @include screen(desktop){
+        line-height: pxToRem(21);
+      }
+    }
+    .display{
+      display: none;
+    }
+    &:hover{
+      .display{
+        display: block;
+      }
+    }
+  }
+  &__content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    &__left{
+      display: flex;
+      flex-direction: column;
+      .description{
+        font-size: pxToRem(14);
+        line-height: pxToRem(19);
+        letter-spacing: pxToRem(1.33);
+        color: $primary-color;
+        text-transform: uppercase;
+        @include screen(desktop){
+          letter-spacing: pxToRem(2);
+        }
+      }
+    }
+    &__right{
+      .text{
+        font-size: pxToRem(16);
+        line-height: pxToRem(22);
+        letter-spacing: pxToRem(1);
+        color: $primary-color;
+        @include screen(desktop){
+          font-size: pxToRem(18);
+          line-height: pxToRem(25);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../../styles';
+
+.title{
+  font-size: pxToRem(36);
+  line-height: pxToRem(36);
+  color: #121212;
+  &.small{
+    font-size: pxToRem(18);
+    line-height: pxToRem(25);
+    font-weight: bold;
+    @include screen(desktop){
+      font-size: pxToRem(21);
+    }
+  }
+}
