@@ -16,12 +16,6 @@ Frontend Github: https://github.com/DurgeshSingh043/airgarage-challenge
 
 Backend Github: https://github.com/DurgeshSingh043/airgarage-challenge-api
 
-You can see the preview of the final output on the loom url below. 
-
-AirGarage-Parking-Solution-app - Watch Video
-
-https://www.loom.com/share/b6ffdd67e92e4db28475e97eed4f2669
-
 Instructions to start:
 
 1. Goto production url and see the output in mobile, tablet and desktop view.
