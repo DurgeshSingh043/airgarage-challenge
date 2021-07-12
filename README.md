@@ -1,17 +1,26 @@
-# landor-fitch-assignment
+# airgarage-parking-solution-challenge
 
 Created with CodeSandbox
 
-Production URL: https://airgarage-react.web.app/ Production Backend URL:
-https://parking-api-043.herokuapp.com/
+Production URL: https://airgarage-react.web.app/
 
-Frontend(React) CodeSandbox: https://codesandbox.io/s/serene-swanson-9mdhd Backend(Node) CodeSandbox:
-https://codesandbox.io/s/optimistic-elbakyan-7xi8u
+Production Backend URL:https://parking-api-043.herokuapp.com/
 
-Frontend Github: https://github.com/DurgeshSingh043/airgarage-challenge Backend Github:
-https://github.com/DurgeshSingh043/airgarage-challenge-api
 
-You can see the preview of the final output on the loom url below. AirGarage-Parking-app - Watch Video
+Frontend(React) CodeSandbox: https://codesandbox.io/s/serene-swanson-9mdhd 
+
+Backend(Node) CodeSandbox: https://codesandbox.io/s/optimistic-elbakyan-7xi8u
+
+
+Frontend Github: https://github.com/DurgeshSingh043/airgarage-challenge 
+
+Backend Github: https://github.com/DurgeshSingh043/airgarage-challenge-api
+
+You can see the preview of the final output on the loom url below. 
+
+AirGarage-Parking-Solution-app - Watch Video
+
+https://www.loom.com/share/b6ffdd67e92e4db28475e97eed4f2669
 
 Instructions to start:
 
@@ -47,5 +56,21 @@ Instructions to start:
 
 Performance measures:
 
-1. Page insight reports: Desktop: first.JPG second.JPG Mobile: First.JPG Second.JPG
-2. Lighthouse reports: Desktop: first.JPGsecond.JPG Mobile: second.JPGfirst.JPG
+1. Page insight reports: 
+Desktop: 
+![first](https://user-images.githubusercontent.com/45793814/125239488-59277880-e306-11eb-83d2-512e34b87a31.JPG)
+![second](https://user-images.githubusercontent.com/45793814/125239526-66446780-e306-11eb-84ab-a078d6155c5b.JPG)
+
+Mobile: 
+![First](https://user-images.githubusercontent.com/45793814/125239548-6e9ca280-e306-11eb-9016-3f9c56c9e83b.JPG)
+![Second](https://user-images.githubusercontent.com/45793814/125239565-72c8c000-e306-11eb-975b-8a1b682d1fbc.JPG)
+
+2. Lighthouse reports: 
+Desktop: 
+![first](https://user-images.githubusercontent.com/45793814/125239606-83793600-e306-11eb-9d07-06268db004da.JPG)
+![second](https://user-images.githubusercontent.com/45793814/125239617-86742680-e306-11eb-91b6-c16a98989d1b.JPG)
+
+Mobile: 
+![first](https://user-images.githubusercontent.com/45793814/125239637-8e33cb00-e306-11eb-8674-5d70f4b96e4e.JPG)
+![second](https://user-images.githubusercontent.com/45793814/125239651-92f87f00-e306-11eb-93dc-53d51e33ada3.JPG)
+
