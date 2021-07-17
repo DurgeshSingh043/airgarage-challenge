@@ -4,3 +4,8 @@ export const LOGO_IMAGE =
 export const REACT_APP_GOOGLE_MAPS_API_KEY = 'YOUR_GOOGLE_API_KEY';
 
 export const INITIAL_PARKINGS_COUNT = 10;
+
+export const PARKING_STATUS = {
+  open: 'Open now',
+  close: 'Close now',
+};
